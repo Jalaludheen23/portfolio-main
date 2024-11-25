@@ -5,7 +5,7 @@ document.querySelector('[data-collapse-toggle]').addEventListener('click', funct
 });
 
 async function fetchProjects() {
-    const response = await fetch('../static/data/projects.json');
+    const response = await fetch('/portfolio-main/static/data/projects.json');
     const projects = await response.json();
     return projects;
 }
